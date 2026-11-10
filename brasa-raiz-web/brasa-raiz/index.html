@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brasa & Raíz, cocina de fuego y raíces. Consulta el menú, reserva tu mesa y encuéntranos.">
+  <title>Brasa &amp; Raíz | Restaurante</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a href="#inicio" class="logo">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>Brasa &amp; Raíz</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu-principal" class="navegacion" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section id="inicio" class="hero">
+      <div class="contenedor hero-grid">
+        <div class="hero-texto">
+          <p class="etiqueta">Cocina de fuego y raíces</p>
+          <h1>Sabores que nacen en la brasa</h1>
+          <p>Ingredientes de temporada, cocción lenta y una carta pensada para compartir en la mesa.</p>
+          <div class="acciones">
+            <a href="#menu" class="btn btn-primario">Ver menú</a>
+            <a href="#reservas" class="btn btn-secundario">Reservar mesa</a>
+          </div>
+        </div>
+        <figure class="hero-imagen">
+          <img src="img/hero.svg" alt="Ilustración de una parrilla con carne asada y verduras" width="600" height="450">
+        </figure>
+      </div>
+    </section>
+
+    <section id="nosotros" class="seccion">
+      <div class="contenedor">
+        <h2>Sobre nosotros</h2>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h3>Fuego lento</h3>
+            <p>Cocinamos a la brasa con paciencia para que cada plato tenga carácter propio.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Ingredientes de temporada</h3>
+            <p>Trabajamos con productores cercanos y cambiamos la carta según lo que está en su mejor momento.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Mesa compartida</h3>
+            <p>Nuestros platos están pensados para compartir, conversar y disfrutar sin prisa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="seccion seccion-alt">
+      <div class="contenedor">
+        <h2>Nuestro menú</h2>
+        <p>Selecciona una categoría para ver los platos disponibles.</p>
+
+        <div class="pestanas" role="tablist" aria-label="Categorías del menú">
+          <button class="pestana" role="tab" id="tab-entradas" aria-controls="panel-entradas" aria-selected="true" tabindex="0" type="button">Entradas</button>
+          <button class="pestana" role="tab" id="tab-fuertes" aria-controls="panel-fuertes" aria-selected="false" tabindex="-1" type="button">Platos fuertes</button>
+          <button class="pestana" role="tab" id="tab-postres" aria-controls="panel-postres" aria-selected="false" tabindex="-1" type="button">Postres</button>
+        </div>
+
+        <div class="platos" role="tabpanel" id="panel-entradas" aria-labelledby="tab-entradas">
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Provoleta ahumada</h3>
+              <p>Queso a la brasa con hierbas frescas y pimentón.</p>
+              <span class="precio">$12</span>
+            </div>
+          </article>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Tiradito de remolacha</h3>
+              <p>Láminas de remolacha asada, crema de cítricos y semillas tostadas.</p>
+              <span class="precio">$10</span>
+            </div>
+          </article>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Empanadas de hongos</h3>
+              <p>Masa crujiente rellena de hongos salteados y ají verde.</p>
+              <span class="precio">$9</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="platos" role="tabpanel" id="panel-fuertes" aria-labelledby="tab-fuertes" hidden>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Costilla a la brasa</h3>
+              <p>Cocción lenta de doce horas con salsa de tamarindo y maíz asado.</p>
+              <span class="precio">$26</span>
+            </div>
+          </article>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Pescado del día</h3>
+              <p>Filete a la parrilla con mantequilla de achiote y vegetales de temporada.</p>
+              <span class="precio">$24</span>
+            </div>
+          </article>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Hongos y raíces</h3>
+              <p>Zanahoria, camote y hongos asados con salsa de hierbas. Opción vegetariana.</p>
+              <span class="precio">$19</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="platos" role="tabpanel" id="panel-postres" aria-labelledby="tab-postres" hidden>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Flan de caramelo quemado</h3>
+              <p>Receta de la casa con caramelo tostado y crema de vainilla.</p>
+              <span class="precio">$8</span>
+            </div>
+          </article>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Helado de ciruela ahumada</h3>
+              <p>Helado cremoso con ciruela asada y galleta de avena.</p>
+              <span class="precio">$7</span>
+            </div>
+          </article>
+          <article class="plato">
+            <img src="img/plato.svg" alt="" width="400" height="300" loading="lazy">
+            <div class="plato-info">
+              <h3>Churros con chocolate</h3>
+              <p>Churros recién fritos con salsa espesa de chocolate amargo.</p>
+              <span class="precio">$7</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservas" class="seccion">
+      <div class="contenedor reservas">
+        <div>
+          <h2>Reserva tu mesa</h2>
+          <p>Completa el formulario y te confirmaremos por correo en menos de 24 horas.</p>
+        </div>
+
+        <form id="form-reserva" class="formulario" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            <small class="error" id="error-nombre" aria-live="polite"></small>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email" autocomplete="email" required>
+            <small class="error" id="error-correo" aria-live="polite"></small>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="fecha">Fecha</label>
+              <input id="fecha" name="fecha" type="date" required>
+              <small class="error" id="error-fecha" aria-live="polite"></small>
+            </div>
+
+            <div class="campo">
+              <label for="personas">Personas</label>
+              <select id="personas" name="personas">
+                <option value="1">1 persona</option>
+                <option value="2" selected>2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 personas</option>
+                <option value="6">6 personas o más</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primario">Enviar reserva</button>
+          <p id="mensaje-form" class="mensaje" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="preguntas" class="seccion seccion-alt">
+      <div class="contenedor">
+        <h2>Preguntas frecuentes</h2>
+        <div class="acordeon">
+          <details>
+            <summary>¿Aceptan reservas para grupos grandes?</summary>
+            <p>Sí. Para grupos de más de seis personas te pedimos reservar con una semana de anticipación.</p>
+          </details>
+          <details>
+            <summary>¿Tienen opciones vegetarianas?</summary>
+            <p>Cada categoría incluye al menos un plato sin carne, y podemos adaptar la mayoría de preparaciones.</p>
+          </details>
+          <details>
+            <summary>¿Puedo cancelar o cambiar mi reserva?</summary>
+            <p>Puedes hacerlo respondiendo al correo de confirmación hasta dos horas antes de tu visita.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contacto" class="pie">
+    <div class="contenedor pie-grid">
+      <div>
+        <h2 class="pie-titulo">Brasa &amp; Raíz</h2>
+        <p>Cocina de fuego y raíces, desde 2016.</p>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <p>Martes a domingo<br>12:00 a 22:00</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p>
+          <a href="tel:+15550102030">+1 (555) 010-2030</a><br>
+          <a href="mailto:brazayraiz@gmail.com">Brazayraiz@gmail.com</a>
+        </p>
+      </div>
+      <div>
+        <h3>Síguenos</h3>
+        <ul class="redes">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Brasa &amp; Raíz. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

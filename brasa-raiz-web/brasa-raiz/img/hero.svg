@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Parrilla con carne y verduras">
+  <rect width="600" height="450" rx="32" fill="#f5e9d6"/>
+  <circle cx="300" cy="215" r="170" fill="#fff6ea"/>
+
+  <!-- Llamas -->
+  <path d="M250 330c-12-22 2-36 0-58 18 14 22 30 16 44 8-6 12-14 10-26 16 16 18 40 6 60z" fill="#e0a526"/>
+  <path d="M300 340c-10-18 2-30 0-48 14 12 18 26 13 38 6-5 9-11 8-20 13 13 15 33 5 50z" fill="#b23a1e"/>
+  <path d="M348 330c-12-22 2-36 0-58 18 14 22 30 16 44 8-6 12-14 10-26 16 16 18 40 6 60z" fill="#e0a526"/>
+
+  <!-- Parrilla -->
+  <rect x="160" y="350" width="280" height="16" rx="8" fill="#1f1b18"/>
+  <g stroke="#1f1b18" stroke-width="6" stroke-linecap="round">
+    <line x1="190" y1="366" x2="190" y2="390"/>
+    <line x1="260" y1="366" x2="260" y2="390"/>
+    <line x1="340" y1="366" x2="340" y2="390"/>
+    <line x1="410" y1="366" x2="410" y2="390"/>
+  </g>
+
+  <!-- Carne -->
+  <ellipse cx="300" cy="300" rx="110" ry="46" fill="#8c4a2f"/>
+  <path d="M230 300c20-18 130-18 150 0" fill="none" stroke="#1f1b18" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+  <path d="M250 320h22M300 330h22M350 312h22" stroke="#1f1b18" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+
+  <!-- Verduras -->
+  <circle cx="200" cy="230" r="22" fill="#4e6b3a"/>
+  <circle cx="400" cy="232" r="20" fill="#4e6b3a"/>
+  <circle cx="420" cy="290" r="14" fill="#e0a526"/>
+  <circle cx="186" cy="290" r="16" fill="#b23a1e"/>
+</svg>
